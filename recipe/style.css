@@ -1,13 +1,25 @@
 @font-face {
   font-family: mainFont;
-  src: url(minecraft.ttf);
+  src: url(vcrmono.ttf);
 }
 
 body {
     background-color: #D3C6DE;
+    margin: auto;
+    width: 75%;
     font-family: mainFont;
     color: #4C243C;
+    line-height:15px;
   }
 h1{
     color: #8E6A96;
+}
+h2{
+  color:#8E6A96
+}
+h5{
+  text-decoration-line: underline;
+}
+div {
+  column-count: 2;
 }
