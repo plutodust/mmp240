@@ -1,12 +1,12 @@
 @font-face {
   font-family: mainFont;
-  src: url(Minecraft.ttf);
+  src: url(minecraft.ttf);
 }
 
 body {
     background-color: #D3C6DE;
-    color: #4C243C;
     font-family: mainFont;
+    color: #4C243C;
   }
 h1{
     color: #8E6A96;
