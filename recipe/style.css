@@ -9,7 +9,7 @@ body {
     width: 75%;
     font-family: mainFont;
     color: #4C243C;
-    line-height:15px;
+    line-height:20px;
   }
 h1{
     color: #8E6A96;
@@ -22,4 +22,5 @@ h5{
 }
 div {
   column-count: 2;
+  column-gap: 2px;
 }
