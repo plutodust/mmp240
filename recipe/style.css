@@ -5,7 +5,7 @@
 
 body {
     background-color: #D3C6DE;
-    margin: auto;
+    margin-left: 100px;
     width: 75%;
     font-family: mainFont;
     color: #4C243C;
@@ -22,5 +22,5 @@ h5{
 }
 div {
   column-count: 2;
-  column-gap: 2px;
+  column-gap: 4px;
 }
