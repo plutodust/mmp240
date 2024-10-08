@@ -1,6 +1,8 @@
 header{
     padding: 30px;
-    background: url("midtermbanner.png") no repeat top/70%;
+    background: 
+    linear-gradient(90deg, #000 0%, #000 33%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%)
+    url("midtermbanner.png") no repeat top right/70%;
     border-style: dashed;
     margin-right: 400px;
 }
@@ -12,3 +14,10 @@ header{
 p{
 
 }
+
+/* padding: 30px;
+    background: 
+    linear-gradient(90deg, #000 0%, #000 33%, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0) 100%)
+    url("midtermbanner.png") no repeat top right/70%;
+    border-style: dashed;
+    margin-right: 400px; */
