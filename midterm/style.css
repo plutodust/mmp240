@@ -1,5 +1,11 @@
+/*page formatting*/
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
 /*TYPOGRAPHY***********************************/
-body{  
+body{
+    width:auto;
     font-family: "Be Vietnam Pro", sans-serif;
     font-size:16px;
     line-height: 1.5;
@@ -70,7 +76,23 @@ li a:hover {
     color: rgb(0, 0, 0);
   }
 
-  /* ABOUT SECTION************************/
-  main div{
+  /*******************ABOUT SECTION************************/
+  main{
+    margin: 1em 2em;
+    overflow: auto;
+  }
+  div.left{
+    width: 48%;
     float: left;
+  }
+  div.right{
+    margin-top: 5em;
+    width: 48%;
+    float: right;
+  }
+/********* FOOTER SECTION ***********************/
+  footer{
+    margin:2em;
+    clear:both;
+    font-size:smaller;
   }
