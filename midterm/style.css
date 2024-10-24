@@ -95,13 +95,16 @@ li a:hover {
 .episodes{
   display:flex;
   flex-wrap:wrap;
+  flex-direction:row;
+
 }
 .card{
-  width:24%;
+  flex: 1 1 auto;
+  width:23%;
   margin-right:1%;
 }
 
-.card img{
+.image{
   width:100%;
 }
 /********* FOOTER SECTION ***********************/
