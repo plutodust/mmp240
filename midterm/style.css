@@ -100,17 +100,37 @@ li a:hover {
 }
 .card{
   flex: 1 1 auto;
-  width:23%;
-  margin-right:1%;
+  width:20%;
+  margin:1%;
+  box-shadow: 5px 5px 7px 3px rgba(0, 0, 0, 0.5);
 }
 
 .image{
   width:100%;
+
 }
+p {
+  font-size: 14px;
+  padding-left:1em;
+  padding-right:1em;
+}
+h4{
+padding-left: 1em;
+}
+.imgbox{
+    height:160px;
+    width:100%;
+    object-fit: auto;
+    overflow: hidden;
+  }
+
 /********* FOOTER SECTION ***********************/
   footer{
     margin:2em;
     clear:both;
     font-size:smaller;
   }
+ 
+
+
  
