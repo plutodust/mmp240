@@ -27,3 +27,12 @@ header{
     top:25px;
     padding:3px;
 }
+
+/*****************PROGRAM MENU******************/
+.dropdown{
+    display:none;
+
+}
+.programNav li:hover .dropdown{
+    display:block;
+}
