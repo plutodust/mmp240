@@ -1,0 +1,29 @@
+body{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin:0.5em;
+}
+
+h2,h3,h4,p{
+    margin-bottom:1em;
+}
+
+#wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/**************HEADER AND TOP NAV****************/
+header{
+    display: flex;
+    justify-content: space-between;
+}
+#topMenu{
+    display:none;
+    position:absolute;
+    background-color:white;
+    border: solid 1px black;
+    right: 0;
+    top:25px;
+    padding:3px;
+}
