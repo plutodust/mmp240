@@ -39,21 +39,41 @@
             background-color: #999;
             color:white;
         }
+
+        @media(min-width:576px){
+            .toplist{
+                display:flex;
+            }
+
+        nav li a{
+            padding: 10px 0;
+            width:200px;
+            text-align:center;
+        }
+        nav li{
+            position:relative;
+        }
+        .dropdown{
+            position:absolute;
+            width:100%
+        }
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <ul>
+        <ul class="topList">
             <li><a href="#">Fruits</a>
-                <ul>
+                <ul class="dropdown">
                     <li><a href="#">Apple</a></li>
                     <li><a href="#">Orange</a></li>
                     <li><a href="#">Pear</a></li>
                 </ul>
             </li>
+
             <li><a href="#">Vegtables</a>
-                <ul>
+                <ul class="dropdown">
                     <li><a href="#">Cabbage</a></li>
                     <li><a href="#">Potato</a></li>
                     <li><a href="#">Squash</a></li>
