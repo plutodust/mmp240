@@ -3,6 +3,7 @@ body{
     font-size: 1em;
     line-height: 1.5em;
     margin:0.5em;
+    background-image: url("Queens-College-campus.jpg");
 }
 
 h2,h3,h4,p{
@@ -30,10 +31,89 @@ header{
 }
 
 /*****************PROGRAM MENU******************/
-.dropdown{
-    display:none;
+.programNav li{
+    display:block;
+    margin-right: 2em;
 
 }
+
+.dropdown{
+    background-color:rgb(210, 210, 210);
+    padding: 0;
+    position: absolute;
+    display:none;
+}
+
+.dropdown li{
+    display:block;
+    border: solid 1px #ccc;
+    padding: 0.5em 2em;
+    margin-right: 0;
+}
+
 .programNav li:hover .dropdown{
     display:block;
 }
+
+/******************* BANNER ***********************/
+div.banner{
+    height: 452px;
+    background-image: url(images/Queens-College-campus.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    padding: 40px;  
+}
+
+.banner h3 a:link, .banner h3 a:visited, .banner h3 a:hover{
+    color:white;
+    text-decoration: none;
+ }
+
+ #apply{
+    background-color: #5790e5;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+ }
+ #apply:hover, #apply:active{
+    background-color: #3e69ab;
+ }
+
+ @media (min-width:768px){
+    .menu{
+        display:none;
+    }
+    #topMenu{
+        display:flex;
+        border:none;
+        position:static;
+    }
+    #topMenu ul{
+        display:flex
+    }
+    #topMenu li{
+        margin-right: 1em;
+    }
+    .programNav ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .programNav ul li{
+        width:32%;
+        position:relative;
+    }
+    .programNav ul li:hover{
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .programNav .dropdown{
+        display:none;
+    }
+    .dropdown{
+        position:absolute;
+        width:100%;
+    }
+ }
