@@ -3,7 +3,6 @@ body{
     font-size: 1em;
     line-height: 1.5em;
     margin:0.5em;
-    background-image: url("Queens-College-campus.jpg");
 }
 
 h2,h3,h4,p{
@@ -19,6 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
 }
+
 #topMenu{
     display:none;
     position:absolute;
@@ -27,18 +27,25 @@ header{
     right: 0;
     top:25px;
     padding:3px;
+}
 
+#topMenu ul li a{
+text-decoration: none;
+color: black;
+}
+#topMenu ul li a:hover{
+    color:#9d9d9d;
 }
 
 /*****************PROGRAM MENU******************/
 .programNav li{
     display:block;
     margin-right: 2em;
-
+    background-color:rgb(210, 210, 210);
+    padding: 10px 15px;
 }
 
 .dropdown{
-    background-color:rgb(210, 210, 210);
     padding: 0;
     position: absolute;
     display:none;
@@ -54,26 +61,44 @@ header{
 .programNav li:hover .dropdown{
     display:block;
 }
+ul .dropdown{
+    position:static;
+}
+.programNav li a{
+    text-decoration:none;
+    color:black;
+}
+.programNav li a:hover{
+    color:rgb(152, 152, 152);
+}
+
 
 /******************* BANNER ***********************/
 div.banner{
     height: 452px;
-    background-image: url(images/Queens-College-campus.jpg);
+    background-image: url(images/queens-college-campus.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
-    background-attachment: fixed;
-    padding: 40px;  
+    background-size:cover;
+    padding: 40px; 
+    margin-top: 2em;
+    
 }
 
-.banner h3 a:link, .banner h3 a:visited, .banner h3 a:hover{
+.banner h3 a{
     color:white;
     text-decoration: none;
+    line-height:1.2em;
+    font-size: 35px;
+ }
+ .banner h3{
+    background-color:#00000055;
+    padding: 14px;
  }
 
  #apply{
     background-color: #5790e5;
     color: white;
-    padding: 14px 25px;
+    padding: 14px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -82,6 +107,30 @@ div.banner{
     background-color: #3e69ab;
  }
 
+/*************SECTIONS*************/
+section, article{
+    margin-bottom:2em;
+    margin-top:1em;
+}
+section h2{
+    text-transform:uppercase;
+    font-weight:bold;
+    color:#9d9d9d
+}
+article h2{
+    text-transform:none;
+    color:black;
+}
+.events h2 a{
+    text-decoration:none;
+    color:black;
+}
+
+.events img{
+    width: 100%;
+}
+
+/**********DESKTOP RESPONSIVE***********/
  @media (min-width:768px){
     .menu{
         display:none;
@@ -111,9 +160,12 @@ div.banner{
     }
     .programNav .dropdown{
         display:none;
-    }
-    .dropdown{
         position:absolute;
-        width:100%;
+        width: 100%;
     }
- }
+    div.home{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap:1em;
+    }
+}
