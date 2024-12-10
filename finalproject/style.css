@@ -21,6 +21,7 @@ h1{
     font-size: 21px;
     color: white;
     background-color:rgb(152, 152, 152);
+    margin-bottom: 1em;
 }
 header{
     display: flex;
@@ -33,7 +34,7 @@ header{
     background-color:white;
     border: solid 1px black;
     right: 0;
-    top:25px;
+    top:42px;
     padding:3px;
 }
 
@@ -43,6 +44,10 @@ color: black;
 }
 #topMenu ul li a:hover{
     color:#9d9d9d;
+}
+
+.menu{
+    cursor:pointer;
 }
 
 /*****************PROGRAM MENU******************/
@@ -166,15 +171,29 @@ article h2{
     font-size: 1.4em;
     font-weight:bold;
 }
-.programCards a{
-    text-decoration:none;
-}
 
 .cardBody{
-    padding:1em
+    padding:1em;
+    padding-bottom: 60px;
 }
+.card{
+    position: relative;
+}
+
+.cardBody a{
+    color:white;
+    background-color:#9d9d9d;
+    text-decoration:none;
+    padding: 9px;
+    margin-top: 12px;
+    position:absolute;
+    bottom: 1em;
+}
+
 /**********DESKTOP RESPONSIVE***********/
  @media (min-width:768px){
+
+    /******INDEX PAGE******/
     .menu{
         display:none;
     }
@@ -210,5 +229,16 @@ article h2{
         display:grid;
         grid-template-columns: 2fr 1fr;
         column-gap:1em;
+    }
+/*******OTHER PAGES******/
+    main.home{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 1em;
+    }
+    .programCards{
+        display:grid;
+        grid-template-columns:repeat(auto-fill, 285px);
+        grid-gap:20px;
     }
 }
