@@ -93,21 +93,20 @@ ul .dropdown{
 
 
 /******************* BANNER ***********************/
-div.banner{
-    height: 452px;
+.banner{
+    height: 432px;
     background-image: url(images/queens-college-campus.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     padding: 40px; 
     margin-top: 2em;
-    
 }
 
 .banner h3 a{
     color:white;
     text-decoration: none;
     line-height:1.2em;
-    font-size: 35px;
+    font-size: 30px;
  }
  .banner h3{
     background-color:#00000055;
@@ -152,6 +151,9 @@ article h2{
 
 /*********CATERGORY PAGES**********/
 
+.category h2{
+    padding-top:1em;
+}
 .card{
     border:solid 1px #000
 }
@@ -167,7 +169,7 @@ article h2{
 .card h3{
     text-transform: uppercase;
 }
-.card h2{
+ h2{
     font-size: 1.4em;
     font-weight:bold;
 }
