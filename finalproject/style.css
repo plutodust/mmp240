@@ -1,8 +1,11 @@
+/*************BODY*****************/
 body{
-    font-family:'Courier New', Courier, monospace;
+    font-family:"Poppins", serif;
     font-size: 1em;
     line-height: 1.5em;
+    color: #0B2A58;
     margin:0.5em;
+    background-color: #FFF3D6;
 }
 
 h2,h3,h4,p{
@@ -19,8 +22,9 @@ footer{
 /**************HEADER AND TOP NAV****************/
 h1{
     font-size: 21px;
-    color: white;
-    background-color:rgb(152, 152, 152);
+    color: #FFC533;
+    background-color:#375E98;
+    padding:0.5em;
     margin-bottom: 1em;
 }
 header{
@@ -31,8 +35,8 @@ header{
 #topMenu{
     display:none;
     position:absolute;
-    background-color:white;
-    border: solid 1px black;
+    background-color: #FFF3D6;
+    border: solid 1px #0B2A58;
     right: 0;
     top:42px;
     padding:3px;
@@ -40,18 +44,32 @@ header{
 
 #topMenu ul li a{
 text-decoration: none;
-color: black;
+font-weight:bold;
+color: #375E98;
 }
 #topMenu ul li a:hover{
-    color:#9d9d9d;
+    color:#0B2A58;
 }
 
 .menu{
     cursor:pointer;
 }
 
+.searchButton{
+    font-family: "Poppins", serif;
+    color:#FFC533;
+    background-color:#375E98;
+    border: solid 1px #0B2A58;
+}
+.searchButton:hover{
+    background-color:#0B2A58;
+}
 /*****************PROGRAM MENU******************/
 
+.searchPrograms{
+    background-color:#E1D3B3;
+    padding:2em;
+}
 .searchPrograms h2{
     font-size: 30px;
 }
@@ -59,8 +77,8 @@ color: black;
 .programNav li{
     display:block;
     margin-right: 2em;
-    background-color:rgb(210, 210, 210);
-    padding: 10px 15px;
+    background-color:#0B2A58;
+    padding: 15px 20px;
 }
 
 .dropdown{
@@ -71,7 +89,7 @@ color: black;
 
 .dropdown li{
     display:block;
-    border: solid 1px #ccc;
+    border: solid 1px #0B2A58;
     padding: 0.5em 2em;
     margin-right: 0;
 }
@@ -85,10 +103,10 @@ ul .dropdown{
 }
 .programNav li a{
     text-decoration:none;
-    color:black;
+    color:#FFC533;
 }
 .programNav li a:hover{
-    color:rgb(152, 152, 152);
+    color:#CC9200;
 }
 
 
@@ -114,7 +132,7 @@ ul .dropdown{
  }
 
  #apply{
-    background-color: #5790e5;
+    background-color: #FFC533;
     color: white;
     padding: 14px 20px;
     text-align: center;
@@ -122,9 +140,19 @@ ul .dropdown{
     display: inline-block;
  }
  #apply:hover, #apply:active{
-    background-color: #3e69ab;
+    background-color: #F5AF00;
  }
 
+ .news a{
+    color:#6D8EBF;
+ }
+ .news a:hover{
+    color:#375E98;
+ }
+ .home article{
+    background-color:#E1D3B3;
+    padding:2em;
+ }
 /*************SECTIONS*************/
 section, article{
     margin-bottom:0.5em;
@@ -133,15 +161,17 @@ section, article{
 section h2{
     text-transform:uppercase;
     font-weight:bold;
-    color:#9d9d9d
+    color:#375E98
 }
 article h2{
     text-transform:none;
-    color:black;
+    color:#0B2A58;
 }
-.events h2 a{
-    text-decoration:none;
-    color:black;
+.events a{
+    color:#6D8EBF;
+}
+.events a:hover{
+    color:#375E98;
 }
 
 .events img{
@@ -154,8 +184,10 @@ article h2{
 .category h2{
     padding-top:1em;
 }
+
 .card{
-    border:solid 1px #000
+    background-color:#E1D3B3;
+    position: relative;
 }
 
 .card img{
@@ -163,13 +195,14 @@ article h2{
 }
 .card h2, .card h3, .card p{
     text-decoration: none;
-    color: black;
+    color: #0B2A58;
 }
 
 .card h3{
     text-transform: uppercase;
 }
- h2{
+
+h2{
     font-size: 1.4em;
     font-weight:bold;
 }
@@ -178,20 +211,19 @@ article h2{
     padding:1em;
     padding-bottom: 60px;
 }
-.card{
-    position: relative;
-}
 
 .cardBody a{
     color:white;
-    background-color:#9d9d9d;
+    background-color: #375E98;
     text-decoration:none;
     padding: 9px;
     margin-top: 12px;
     position:absolute;
     bottom: 1em;
 }
-
+.cardBody a:hover{
+    background-color: #0B2A58;
+}
 /**********DESKTOP RESPONSIVE***********/
  @media (min-width:768px){
 
@@ -213,6 +245,7 @@ article h2{
     .programNav ul{
         display: flex;
         justify-content: space-between;
+        z-index:1;
     }
     .programNav ul li{
         width:32%;
@@ -226,6 +259,12 @@ article h2{
         display:none;
         position:absolute;
         width: 100%;
+    }
+    
+    ul .dropdown{
+        position:relative;
+        right: 0px;
+        top:52px;
     }
     div.home{
         display:grid;
@@ -241,6 +280,6 @@ article h2{
     .programCards{
         display:grid;
         grid-template-columns:repeat(auto-fill, 285px);
-        grid-gap:20px;
+        gap:20px;
     }
 }
